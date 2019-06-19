@@ -15,7 +15,8 @@
     "extra": {
         "laravel": {
             "providers" : [
-                "CungHocVui\\Analytics\\AnalyticsServiceProvider"
+                "CungHocVui\\Analytics\\AnalyticsServiceProvider",
+                "CungHocVui\\Analytics\\Providers\\LogicServiceProvider"
             ]
         }
     },
