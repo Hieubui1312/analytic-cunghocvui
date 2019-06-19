@@ -17,7 +17,10 @@
             "providers" : [
                 "CungHocVui\\Analytics\\AnalyticsServiceProvider",
                 "CungHocVui\\Analytics\\Providers\\LogicServiceProvider"
-            ]
+            ],
+            "aliases" : {
+                "GACungHocVui": "CungHocVui\\Analytics\\AnalyticsFacade"
+            }
         }
     },
     "require": {

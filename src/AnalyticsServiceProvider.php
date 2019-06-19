@@ -20,8 +20,6 @@ class AnalyticsServiceProvider extends ServiceProvider
             $client = app(AnalyticsClient::class);
             return new Analytics($client);
         });
-        $loader = AliasLoader::getInstance();
-        $loader->alias('Anal', AnalyticsFacade::class);
     }
 
     /**
