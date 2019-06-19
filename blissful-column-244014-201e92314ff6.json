@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "blissful-column-244014",
+  "private_key_id": "201e92314ff6df0fe5e4994fe859049a3e16336c",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQDUgi1NCVP4yqyC\nL49cb8otqXFLgBJx9NkFLw2bW4KAg97kbApQTw1cpuFLFmKGWCF2v+0GFocdCLxB\nmVDvf9YVQXLnO0F0p592E0MqhPKE2gsO6+YVUj9XLcb7kVwROzhiLe454Xg4Pt38\nrlaHTKDHcugqH5gBmqvMLSOmt6J7bmxZYKDXESM1X/gWr4rYnUFrezagALq9/IQc\n5e9qqMCn2dW8d3ISOEMg/JsI0ze1+f3H57MsiF6blnW01/5VmhpXOGhyGzsIGwIz\nqF7UDHTRqF1NbtM0/660K6P/gORsxX8wBrrpaSQ5mk8K6FPSu1Y9UAi0lmAQmqg4\nngVMoiIXAgMBAAECggEASDFRInKgzExN/owZr9VqYcjGbFe97Gi5sUEi5jxYQUCL\nYB40AsRYTbmDn/ai0fDurWDWLNNKY1qsWbyz+ij7mYz6dAN1YSPw0DQLBU7U9Lz+\nNLt/Fo8yZXNvvdbL6C6uIOxpmdA2/yScVVMEokIt/JPUuzqwcRsScfKDwgdwc22Z\ndxDRQAzOn1jXNv3cHBU2c7olfFB3mHgBZkYy8NV+f8AJotKcRbGitC445rM+mNci\nR2YXmQ38tBbVlwjfKPzdDTc0Redylu7DrJyEM2HlJhpppFY6iHptwhJ65ve3x2DO\nd1Mn+QxdYb/5K0O3ekVFDJfQxaWUUvLEX15+/yXKAQKBgQDqlK5O4OH21y7vKG7u\nXByTu+kLeUUurCndpdriuMWIuEIarVdNZgGWt7m5fH2em0fzcCcn5hHH9xSuAoJq\nOA9WjAZ/w5FiMu0yfQmyVpbBlP26iu9f5a6PEbOVaS2O/b92O+MHyzhsCc0wt4oq\nC9RscfYVmqXk8H/o7AIMBPg8IQKBgQDn6Y6gJAQjfUoSaELIhpskPxBcYc/U0hSV\nYA0PMIx7fHEUh5Rs4QnHewENRwU7gaeztTTrUc4vl90yJnCNMeq62Noi2dJTvv6X\nj/up0th89vIFStL82GmcxvwvaPIeKOw2Hiis0IDbtyUGR6EZJoOTNo1mkwNoWp5j\neLrmcx5XNwKBgQDpNNCpSDY8kKZvSjImM1qRoFFJf9FAWhXw7U7S8MAocI3/OW6+\nWnef35z7AwFbqaH5KPk0WCw7MK7VY1dFw9+zuddIMyOYjWp0NAxsyFptrvIj/rWF\nD7DfOMjg88RAEJHEODs251h7R68/DGiF7mbLPOxZg/oCxPlUlTRfwJ0MIQKBgFJX\nPbmkMAf9wx/3/sY97LWY4pE6dVVF5eMHgHuFLEvn6ip03QEvgY5fIQd60OPI7CdF\nTm3C1OdXD0VwGoQ3VfVTa1f2aNQtOy3LBHrOjukHsPSqFXGK0SzGBeI7a8PDmeK5\nII4DVc0tIKszIYLRhuPs+ZWS2yHhEt2Ujx+lff9PAoGBAKB9IZkEziyM32B/E+/O\nfyLk/+z0iI3Kp+ExyIxCLdrSlSfij7Gj+1kw2enw3rO3Th8w0v6XV6BeyWnsIk5y\nDtekfpBuS0pJvM3QTlvQn9ZsUQNU5oMdrMpqJ5VhSNfYsV54DJDN23/1U+akQ1oc\nvjuI76s1tB2zAtxeCvlk/xm5\n-----END PRIVATE KEY-----\n",
+  "client_email": "buiminhhieu1312@blissful-column-244014.iam.gserviceaccount.com",
+  "client_id": "116234606319352205572",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/buiminhhieu1312%40blissful-column-244014.iam.gserviceaccount.com"
+}

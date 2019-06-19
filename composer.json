@@ -1,0 +1,24 @@
+{
+    "name": "analytic/cunghocvui",
+    "description": "package get goggle analytic api",
+    "license": "1.0",
+    "authors": [
+        {
+            "name": "HieuBUi",
+            "email": "hieubui13121997@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "CungHocVui\\Analytics\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "provider": [
+                "CungHocVui\\Analytics\\AnalyticsServiceProvider"
+            ]
+        }
+    },
+    "require": {}
+}
