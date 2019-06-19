@@ -1,7 +1,6 @@
 {
     "name": "analytic/cunghocvui",
-    "description": "package get goggle analytic api",
-    "license": "1.0",
+    "description": "GET PAGE VIEw",
     "authors": [
         {
             "name": "HieuBUi",
@@ -10,12 +9,12 @@
     ],
     "autoload": {
         "psr-4": {
-            "CungHocVui\\Analytics\\": "src/"
+            "CungHocVui\\Analytics" : "src/"
         }
     },
     "extra": {
         "laravel": {
-            "provider": [
+            "provider" : [
                 "CungHocVui\\Analytics\\AnalyticsServiceProvider"
             ]
         }
