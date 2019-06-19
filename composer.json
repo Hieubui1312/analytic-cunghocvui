@@ -9,7 +9,7 @@
     ],
     "autoload": {
         "psr-4": {
-            "CungHocVui\\Analytics" : "src/"
+            "CungHocVui\\Analytics\\" : "src/"
         }
     },
     "extra": {
