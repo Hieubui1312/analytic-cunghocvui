@@ -2,7 +2,6 @@
 
 namespace CungHocVui\Analytics;
 
-use Illuminate\Foundation\AliasLoader;
 use Illuminate\Support\Facades\File;
 use Illuminate\Support\ServiceProvider;
 
@@ -33,6 +32,7 @@ class AnalyticsServiceProvider extends ServiceProvider
         $this->publishes([
             __DIR__ . '/../config.php' => config_path('analytics.php')
         ]);
+//        php artisan vendor:publish --provider="CungHocVui\Analytics\AnalyticsServiceProvider"
     }
 
     /**
