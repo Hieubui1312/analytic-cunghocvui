@@ -3,6 +3,7 @@
 namespace CungHocVui\Analytics;
 
 use Illuminate\Foundation\AliasLoader;
+use Illuminate\Support\Facades\File;
 use Illuminate\Support\ServiceProvider;
 
 class AnalyticsServiceProvider extends ServiceProvider
@@ -43,5 +44,6 @@ class AnalyticsServiceProvider extends ServiceProvider
     {
         //
         include_once __DIR__ . "/Routes/web.php";
+        File::makeDirectory(storage_path("app/analytics"));
     }
 }

@@ -20,7 +20,6 @@ class AnalyticsClient{
         $client->setApplicationName($this->applicationName);
         $client->setAuthConfig($this->keyFileLocation);
         $client->setScopes($this->scope);
-
         return new \Google_Service_Analytics($client);
     }
 }
