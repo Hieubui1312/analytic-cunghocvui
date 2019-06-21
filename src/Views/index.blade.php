@@ -108,28 +108,28 @@
                 STT
             </th>
             <th>
-                Trang
+                Page
             </th>
             <th>
-                Số lần xem trang
+                Page views
             </th>
             <th>
-                Số lần xem trang duy nhất
+                Unique page views
             </th>
             <th>
-                Thời gian trung bình trên trang
+                Time on site
             </th>
             <th>
-                Số lần truy cập
+                Number of visit
             </th>
             <th>
-                Tỉ lệ thoát
+                Exit rate
             </th>
             <th>
-                Thoát
+                Exit
             </th>
             <th>
-                Giá trị trang
+                Page value
             </th>
         </tr>
         </thead>
