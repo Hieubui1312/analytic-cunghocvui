@@ -92,18 +92,27 @@
             background-color: #dcdae2;
             cursor: pointer;
         }
+        .error{
+            text-align: center;
+            color: #d95140;
+            margin-top: -5px;
+            margin-bottom: 10px;
+        }
     </style>
 </head>
 <body>
-<div class="wrapper">
+    <div class="wrapper">
     <form action="{{ route('searchPath') }}" method="post">
         @csrf
         <input type="text" placeholder="Please enter your path" name="pathPage" required>
         <input type="submit" value="Submit">
     </form>
+    @if(session('info') )
+        <div class="error">{{ session('info') }}</div>
+    @endif
     <table>
         <thead>
-        <tr>
+            <tr>
             <th>
                 STT
             </th>
@@ -167,7 +176,7 @@
 
                 </tr>
             @endforeach
-            @else
+        @else
             <tr><td style="text-align: center" colspan="9">Data is not found </td></tr>
         @endif
         </tbody>
