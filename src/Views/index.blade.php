@@ -132,13 +132,13 @@
                 Number of visit
             </th>
             <th>
-                Exit rate
+                Exit rate(%)
             </th>
             <th>
                 Exit
             </th>
             <th>
-                Page value
+                Page value($)
             </th>
         </tr>
         </thead>
@@ -159,7 +159,7 @@
                         {{ $row['unique_page_view'] }}
                     </td>
                     <td>
-                        {{ $row['time_page'] }}
+                        {{ gmdate("H:i:s", $row['time_page']) }}
                     </td>
                     <td>
                         {{ $row['entrance'] }}
