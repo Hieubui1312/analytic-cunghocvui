@@ -8,13 +8,11 @@ class AnalyticsClient{
     protected $applicationName;
     protected $scope;
 
-    public function __construct()
+    public function __construct($keyFileLocation, $applicationName, $scope)
     {
-//        $file_location = __DIR__ . "/../analytics/" .API_CLIENT['key_file_location'];
-        $file_location = __DIR__ ."/../".API_CLIENT['key_file_location'];
-        $this->keyFileLocation = $file_location;
-        $this->applicationName = API_CLIENT['application_name'];
-        $this->scope = API_CLIENT['scope'];
+        $this->keyFileLocation = $keyFileLocation;
+        $this->applicationName = $applicationName;
+        $this->scope = $scope;
     }
 
     public function create(){

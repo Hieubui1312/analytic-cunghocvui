@@ -7,10 +7,10 @@ class Analytics {
     protected $client;
     protected $viewId;
 
-    public function __construct(AnalyticsClient $client)
+    public function __construct(AnalyticsClient $client, $viewId)
     {
         $this->client = $client->create();
-        $this->viewId = ANALYTIC['view_id'];
+        $this->viewId = $viewId;
     }
 
     public function analysisPagePath(){

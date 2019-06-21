@@ -12,6 +12,7 @@ class AnalyticsController extends Controller
         $rows = \GACungHocVui::analysisPagePath();
         return view('analytics::index', ['rows' => $rows]);
     }
+
     public function search(){
         $result = \GACungHocVui::searchPagePath('/bai-viet/6-meo-nho-nhanh-cac-cong-thuc-luong-giac-hieu-qua-nhat-cunghocvui-com.html');
         dd($result);
