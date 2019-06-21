@@ -44,6 +44,6 @@ class AnalyticsServiceProvider extends ServiceProvider
     {
         //
         include_once __DIR__ . "/Routes/web.php";
-        File::makeDirectory(storage_path("app/analytics"));
+        File::makeDirectory(storage_path("app/analytics"), 0777, true, true);
     }
 }
