@@ -48,9 +48,6 @@
             table-layout: fixed;
             word-break: break-word;
         }
-        /*th:not(:last-child){*/
-        /*border-right: 1px solid #ffffff;*/
-        /*}*/
         table{
             width: 100%;
             border-radius: 4px;
