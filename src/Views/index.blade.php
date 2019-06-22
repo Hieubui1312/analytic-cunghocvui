@@ -100,7 +100,7 @@
 <body>
     <div class="wrapper">
     <form action="{{ route('searchPath') }}" method="post">
-        @csrf
+        {{ csrf_token() }}
         <input type="text" placeholder="Please enter your path" name="pathPage" required>
         <input type="submit" value="Submit">
     </form>
