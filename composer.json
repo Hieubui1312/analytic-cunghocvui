@@ -7,7 +7,7 @@
             "email": "hieubui13121997@gmail.com"
         }
     ],
-    "version": "1.0.0",
+    "version": "v1.0.2",
     "autoload": {
         "psr-4": {
             "CungHocVui\\Analytics\\" : "src/"
