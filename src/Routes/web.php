@@ -5,5 +5,5 @@
             'as'=> 'searchPath',
             'uses' => \CungHocVui\Analytics\Controllers\AnalyticsController::class.'@postSearch'
         ]);
-        Route::get('/index', \CungHocVui\Analytics\Controllers\AnalyticsController::class."@index");
+        Route::get('/index/cunghocvui', \CungHocVui\Analytics\Controllers\AnalyticsController::class."@index");
     });
