@@ -15,7 +15,7 @@ class AnalyticsController extends Controller
     }
 
     public function search(){
-        $result = \GACungHocVui::searchPagePath('/bai-viet/6-meo-nho-nhanh-cac-cong-thuc-luong-giac-hieu-qua-nhat-cunghocvui-com.html');
+        $result = \GACungHocVui::searchOneWeek('/bai-viet/6-meo-nho-nhanh-cac-cong-thuc-luong-giac-hieu-qua-nhat-cunghocvui-com.html');
         dd($result);
     }
 
@@ -30,7 +30,7 @@ class AnalyticsController extends Controller
         if (strpos($path, 'https://cunghocvui.com') === 0){
             $path = substr($path, 22, strlen($path));
         }
-        $rows = \GACungHocVui::searchPagePath($path);
+        $rows = \GACungHocVui::searchPageWeek($path);
         return view('analytics::index', ['rows' => $rows]);
     }
 }

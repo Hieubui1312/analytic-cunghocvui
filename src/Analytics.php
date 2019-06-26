@@ -37,7 +37,7 @@ class Analytics {
         return $result;
     }
 
-    public function searchPagePath($path){
+    public function searchPageWeek($path){
         $responses = $this->performQuery(
             '7daysAgo',
             "today",
@@ -61,7 +61,81 @@ class Analytics {
         });
         return $result;
     }
-
+    
+    public function searchPageDay(){
+        $responses = $this->performQuery(
+            '1daysAgo',
+            "today",
+            'ga:pageViews, ga:uniquePageviews, ga:avgTimeOnPage, ga:entrances, ga:exitRate ,ga:exits, ga:pageValue',
+            array(
+                'dimensions' => 'ga:pagePath ',
+                'filters' => 'ga:pagePath%3D%3D'.$path
+            )
+        );
+        $result = collect($responses['rows'] ?? [])->map(function ($response){
+            return [
+                'page_path' => $response[0],
+                'page_view' => $response[1],
+                'unique_page_view' => $response[2],
+                'time_page' => $response[3],
+                'entrance' => $response[4],
+                'exit_rate' => $response[5],
+                'exits' => $response[6],
+                'page_value' => $response[7]
+            ];
+        });
+        return $result;
+    }
+    
+    public function searchPageMonth(){
+        $responses = $this->performQuery(
+            '30daysAgo',
+            "today",
+            'ga:pageViews, ga:uniquePageviews, ga:avgTimeOnPage, ga:entrances, ga:exitRate ,ga:exits, ga:pageValue',
+            array(
+                'dimensions' => 'ga:pagePath ',
+                'filters' => 'ga:pagePath%3D%3D'.$path
+            )
+        );
+        $result = collect($responses['rows'] ?? [])->map(function ($response){
+            return [
+                'page_path' => $response[0],
+                'page_view' => $response[1],
+                'unique_page_view' => $response[2],
+                'time_page' => $response[3],
+                'entrance' => $response[4],
+                'exit_rate' => $response[5],
+                'exits' => $response[6],
+                'page_value' => $response[7]
+            ];
+        });
+        return $result;
+    }
+    
+    public function searchPageTime($startTime, $endTime){
+        $responses = $this->performQuery(
+            $startTime,
+            $endTime,
+            'ga:pageViews, ga:uniquePageviews, ga:avgTimeOnPage, ga:entrances, ga:exitRate ,ga:exits, ga:pageValue',
+            array(
+                'dimensions' => 'ga:pagePath ',
+                'filters' => 'ga:pagePath%3D%3D'.$path
+            )
+        );
+        $result = collect($responses['rows'] ?? [])->map(function ($response){
+            return [
+                'page_path' => $response[0],
+                'page_view' => $response[1],
+                'unique_page_view' => $response[2],
+                'time_page' => $response[3],
+                'entrance' => $response[4],
+                'exit_rate' => $response[5],
+                'exits' => $response[6],
+                'page_value' => $response[7]
+            ];
+        });
+        return $result;
+    }
     public function performQuery($startTime, $endTime, $metrics, array $other = []){
         return $this->client->data_ga->get(
             "ga:".$this->viewId,
