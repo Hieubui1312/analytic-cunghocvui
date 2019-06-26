@@ -62,7 +62,7 @@ class Analytics {
         return $result;
     }
     
-    public function searchPageDay(){
+    public function searchPageDay($path){
         $responses = $this->performQuery(
             '1daysAgo',
             "today",
@@ -87,7 +87,7 @@ class Analytics {
         return $result;
     }
     
-    public function searchPageMonth(){
+    public function searchPageMonth($path){
         $responses = $this->performQuery(
             '30daysAgo',
             "today",
@@ -112,7 +112,7 @@ class Analytics {
         return $result;
     }
     
-    public function searchPageTime($startTime, $endTime){
+    public function searchPageTime($path,$startTime, $endTime){
         $responses = $this->performQuery(
             $startTime,
             $endTime,
